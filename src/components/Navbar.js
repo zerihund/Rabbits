@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import { Button } from './Button'
 import './Navbar.css'
 
-function Navbar() {
+const Navbar=()=> {
     const [click,setClick]=useState(false)
     const [button,setButton]=useState(false)
 
@@ -23,7 +23,7 @@ function Navbar() {
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-log'>
-                        RABBITS <i className="fab fa-pagelines"></i>
+                       Planteneer <i className="fab fa-pagelines"></i>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                       <i className={click? 'fas fa-times':'fas fa-bars'}/>  
@@ -36,43 +36,43 @@ function Navbar() {
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
-                            <i class="fab fa-canadian-maple-leaf"></i> My gardens
+                            <Link  to='/MyGarden' className='navbar-links' onClick={closeMobileMenu}>
+                            <i class="fab fa-canadian-maple-leaf"></i> My Grdens
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
+                            <Link  to='/MyPlants' className='navbar-links' onClick={closeMobileMenu}>
                             <i class="fas fa-seedling"></i> My Plants
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
+                            <Link  to='/Points' className='navbar-links' onClick={closeMobileMenu}>
                             <i class="fas fa-star"></i> Points
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
-                            <i class="far fa-file-video"></i> stream
+                            <Link  to='/Stream' className='navbar-links' onClick={closeMobileMenu}>
+                            <i class="far fa-file-video"></i> Stream
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
+                            <Link  to='/Diary' className='navbar-links' onClick={closeMobileMenu}>
                             <i class="fas fa-book-open"></i> Diary
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
+                            <Link  to='/Setting' className='navbar-links' onClick={closeMobileMenu}>
                             <i class="fas fa-cogs"></i> Setting
                             </Link>
 
                         </li>
                         <li className='nav-item'>
-                            <Link  to='/' className='navbar-links' onClick={closeMobileMenu}>
+                            <Link  to='/SignUp' className='navbar-links' onClick={closeMobileMenu}>
                             <i class="fas fa-sign-in-alt"></i> Sign Up
                             </Link>
                         </li>
