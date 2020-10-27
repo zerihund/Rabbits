@@ -6,7 +6,6 @@ import MyPlants from './components/MyPlants'
 import Points from './components/Points'
 import Stream from './components/Stream'
 import Setting from './components/Setting'
-import SingUp from './components/SignUp'
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 import SignUp from './components/SignUp'
 
